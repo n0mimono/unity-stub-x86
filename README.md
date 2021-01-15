@@ -4,9 +4,7 @@
 
 Unity 2019.4.0.1f 対応版 libmain.so
 
-- 主に、Unity as a library 向けの話
-- Unity は x86 をサポートしていない
-- Android エミュレータでアプリを起動したときに `UnsatisfiedLinkError` が起きるため、これを回避するためのsoファイルをつくる
+Unity は x86 をサポートしておらず、 Android エミュレータでアプリを起動したときに `UnsatisfiedLinkError` が起きる。 特に、 Unity as a library として Unity を利用する場合には、 Android ネイティブ側でエミュレータを使用できないと不便なことがある。これに対して、ダミーのsoファイルをつくることにより回避するというのが本リポジトリの主旨である。
 
 ## ビルド
 
